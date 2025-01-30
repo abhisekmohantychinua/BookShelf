@@ -26,10 +26,11 @@ public class Rent {
     private Book book;
 
     @CreatedDate
-    @Column(nullable = false,updatable = false)
+    @Column(nullable = false, updatable = false)
     private Date rentedDate;
     private Date returnedDate;
 
+    private Integer quantity;
     private Integer fine;
 
 }

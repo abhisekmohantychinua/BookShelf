@@ -1,11 +1,12 @@
 package dev.abhisek.api.dto;
 
 public record RentResponse(
-        String id,
+        Integer id,
         UserResponse user,
         BookResponse book,
         String rentedAt,
         String returnedAt,
-        Integer fine
+        Integer fine,
+        Integer quantity
 ) {
 }
