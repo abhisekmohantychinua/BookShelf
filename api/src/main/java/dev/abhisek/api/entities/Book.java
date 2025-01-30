@@ -17,10 +17,12 @@ public class Book {
     @Column(unique = true)
     private String title;
     private String author;
+    @Column(columnDefinition = "TEXT", length = 500)
     private String description;
     private Integer price;
     private Integer quantity;
     private Boolean featured;
     @OneToMany(mappedBy = "book", fetch = FetchType.LAZY)
     private List<Rent> rents;
+    private String image;
 }
