@@ -15,3 +15,5 @@ spring:
   servlet:
     multipart:
       max-file-size: 2MB
+env:
+  cors: to_be_given
